@@ -102,6 +102,18 @@ public class DriverScript {
 							FunctionLibrary.tableValidation(driver, Test_Data);
 							test.log(LogStatus.INFO, Description);
 						}
+						else if(Object_Type.equalsIgnoreCase("stockCategories"))
+							{ 
+							FunctionLibrary.stockCategories(driver);
+							test.log(LogStatus.INFO, Description);
+							}
+						else if(Object_Type.equalsIgnoreCase("stockValidation"))
+						{
+							FunctionLibrary.stockValidation(driver, Test_Data);
+							test.log(LogStatus.INFO, Description);
+							
+						}
+						
 						
 						
 						//write as pass into TCModule status column
